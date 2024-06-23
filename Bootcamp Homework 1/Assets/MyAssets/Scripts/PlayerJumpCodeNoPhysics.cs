@@ -17,13 +17,6 @@ public class PlayerJumpCodeNoPhysics : MonoBehaviour
 
     Collider2D[] results = new Collider2D[1]; //records a refernece to any colliders that are found in a local array.
 
-
-    void Start()
-    {
-        
-    }
-
-
     void Update()
     {
        MakeObjectJump();
