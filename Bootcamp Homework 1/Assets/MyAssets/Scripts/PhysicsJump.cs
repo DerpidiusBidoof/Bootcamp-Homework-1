@@ -32,7 +32,7 @@ public class PhysicsJump : MonoBehaviour
 
     private void DoAJump()
     {
-        float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * rb.gravityScale) * -2) * rb.mass;
+        float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * rb.gravityScale) * -2) * rb.mass; //makes more consistent experience for jump.
 
         //If the space key is pressed Adds force onto the rigidbody to make it move upward.
         if (Input.GetKeyDown(KeyCode.Space))
