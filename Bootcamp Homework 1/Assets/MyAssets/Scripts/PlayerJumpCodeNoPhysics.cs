@@ -49,7 +49,7 @@ public class PlayerJumpCodeNoPhysics : MonoBehaviour
         }
 
         //if player does jump, apply any new jumping velocity after gravity and ground checks so new jump is not canceled out because object is grounded. 
-        if (Input.GetKeyUp(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             //velocity = jumpHeight;
             velocity = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * gravityScale));
