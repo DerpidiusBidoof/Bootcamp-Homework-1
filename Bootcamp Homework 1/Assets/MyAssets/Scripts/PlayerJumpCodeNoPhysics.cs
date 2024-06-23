@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerJumpCode : MonoBehaviour
+public class PlayerJumpCodeNoPhysics : MonoBehaviour
 {
     [SerializeField] float jumpHeight = 5;
     [SerializeField] float gravityScale = 5;
